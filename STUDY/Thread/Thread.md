@@ -317,5 +317,57 @@ void setDaemon(boolean on)
 
 ---
 
+### **sleep()**
+
+- static 메서드
+- 현재 쓰레드를 지정된 시간동안 멈추게 함.
+- 예외를 발생시킬 수 있으므로 예외처리를 해야 함.(InterruptedException이 발생하면 깨어남)
+  1. 시간 종료(time up)
+  2. interrupted ⇒ 깨우는 것
+  - 매번 sleep()을 예외처리를 하려면 불편하므로 예외처리가 되어있는 새로운 메서드를 따로 만들어서 사용.
+- 특정 쓰레드를 지정해서 멈추게 하는 것은 불가능.
+  - `Thread.sleep(200);` 이런 식으로 클래스 이름을 써야 됨. (오해의 소지가 없도록)
+
+### interrupt()
+
+- 대기상태(WAITING)인 쓰레드를 실행대기 상태(RUNNABLE)로 만듦.
+  - 대기상태 = 작업이 중단 ⇒ sleep(), join(), wait()
+- static 메서드
+- `Thread.interrupted()` ⇒ main쓰레드가 interrupt 되었는지 확인. (현재 쓰레드의 interrupted상태를 알려주고, false로 초기화)
+- `isInterrupted()` ⇒ boolean 형식. 쓰레드의 interrupted 상태를 반환
+
+### suspend(), resume(), stop()
+
+- 쓰레드의 실행을 일시정지, 재개, 완전정지 시킴.
+  - 일시정지 = suspend()
+  - 재개 = resume()
+  - 완전정지 = stop()
+- 이 메서드들을 쓰면 쓰레드를 제어하기 편하지만 deprecated되었음.(사용을 권장하지 않음. ⇒ 쓰면 안 됨! dead-lock, 교착상태를 일으킬 문제가 있어서.)
+
+
+>📌 **volatile**
+> 
+> - ex) `volatile boolean suspended = false;`
+> - 쉽게 바뀌는 변수
+> - 원본은 RAM에 저장. CPU는 복사본을 저장함.
+> - false에서 true로 바뀌면 CPU도 그렇게 바뀌어야 되는데, 바뀌지 않는 경우가 발생할 수 있음.
+> - 따라서 volatile을 붙이면, 복사본을 사용하지 않음.
+> - 필요할 때마다 원본을 직접 가서 읽고 오는 것.
+
+
+### join()
+
+- 지정된 시간동안 특정 쓰레드가 작업하는 것을 기다림.
+- 예외처리를 해야 함.(InterruptedException이 발생하면 작업 재개)
+- sleep()과 join()은 비슷한 점이 많음!
+- 어떤 쓰레드가 다른 쓰레드의 작업을 기다려야 될 때 join() 메서드를 사용함.
+
+### yield()
+
+- 남은 시간을 다음 쓰레드에게 양보하고, 자신(현재 쓰레드)은 실행대기함.
+- yield()와 interrupt()를 적절히 사용하면, 응답성과 효율을 높일 수 있음.
+
+---
+
 ### 참고자료
 💌 [[자바의 정석 - 기초편] ch13](https://www.youtube.com/watch?v=kNNHaAaFDs8&list=PLW2UjW795-f6xWA2_MUhEVgPauhGl3xIp&index=148)
