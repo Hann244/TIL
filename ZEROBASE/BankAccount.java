@@ -1,4 +1,4 @@
-package JAVA;
+package ZEROBASE;
 
 abstract class BankAccount {
 

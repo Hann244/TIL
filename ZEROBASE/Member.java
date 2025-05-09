@@ -1,4 +1,4 @@
-package JAVA;
+package ZEROBASE;
 
 // 일반 회원 클래스 (부모 클래스)
 public class Member {

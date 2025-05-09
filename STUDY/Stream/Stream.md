@@ -134,11 +134,11 @@ map() 도 다른 Stream API와 마찬가지로 람다 표현식을 파라미터�
 
 ✅ [Java 스트림 Stream (2) 고급](https://futurecreator.github.io/2018/08/26/java-8-streams-advanced/)
 
-✅ [자바 스트림 설명부터 사용하는 이유 파헤쳐보기 #JAVA #스트림](https://zangzangs.tistory.com/171)
+✅ [자바 스트림 설명부터 사용하는 이유 파헤쳐보기 #ZEROBASE #스트림](https://zangzangs.tistory.com/171)
 
 ✅ [[Java] Stream API](https://velog.io/@edgar6bf/Java-Stream-API)
 
-✅ [[JAVA] Stream()의 filter() 메서드를 활용한 요소 필터링](https://velog.io/@jungmyeong96/JAVA-Stream%EC%9D%98-filter-%EB%A9%94%EC%84%9C%EB%93%9C%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%9A%94%EC%86%8C-%ED%95%84%ED%84%B0%EB%A7%81)
+✅ [[ZEROBASE] Stream()의 filter() 메서드를 활용한 요소 필터링](https://velog.io/@jungmyeong96/JAVA-Stream%EC%9D%98-filter-%EB%A9%94%EC%84%9C%EB%93%9C%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%9A%94%EC%86%8C-%ED%95%84%ED%84%B0%EB%A7%81)
 
 ✅ [스트림(stream)이란 무엇인가?](https://velog.io/@chamominedev/%EC%8A%A4%ED%8A%B8%EB%A6%BCstream%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
 

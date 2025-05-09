@@ -1,4 +1,4 @@
-package JAVA;
+package ZEROBASE;
 
 // 다형성
 class Payment {
