@@ -184,6 +184,6 @@ MyFunction myMethod() {
 
 💌 [[자바의 정석 - 기초편] ch14-5,6 함수형인터페이스](https://www.youtube.com/watch?v=0Sp9eFRV8gE)
 
-✅ [[ZEROBASE] 람다식(Lambda)의 개념 및 사용법](https://khj93.tistory.com/entry/JAVA-%EB%9E%8C%EB%8B%A4%EC%8B%9DRambda%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EA%B3%A0-%EC%82%AC%EC%9A%A9%EB%B2%95)
+✅ [[JAVA] 람다식(Lambda)의 개념 및 사용법](https://khj93.tistory.com/entry/JAVA-%EB%9E%8C%EB%8B%A4%EC%8B%9DRambda%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EA%B3%A0-%EC%82%AC%EC%9A%A9%EB%B2%95)
 
 ✅ [[Java] 람다식(Lambda Expression)과 함수형 인터페이스(Functional Interface) - (2/5)](https://mangkyu.tistory.com/113)
